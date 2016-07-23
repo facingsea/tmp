@@ -1,0 +1,228 @@
+.post {
+  padding: 25px 0 15px;
+  .post-title {
+    margin: 0;
+    color: #555;
+    text-align: left;
+    font: bold 25px/1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;
+    a {
+      color: #555;
+    }
+  }
+  .post-meta {
+    padding: 0;
+    margin: 15px 0 0;
+    color: #6E7173;
+    float: left;
+    display: inline;
+    text-indent: .15em;
+    &:before {
+      font-family: "FontAwesome";
+      content: "\f073";
+      padding-right: 0.3em;
+    }
+    .category {
+      &:before {
+        font-family: "FontAwesome";
+        content: "\f07c";
+        padding-right: 0.3em;
+      }
+    }
+    #busuanzi_value_page_pv {
+      &:before {
+        font-family: "FontAwesome";
+        content: "\f024";
+        padding-right: 0.3em;
+      }
+    }
+  }
+  .ds-thread-count {
+    padding: 0;
+    margin: 15px 0 0;
+    color: #6E7173;
+    float: right;
+    display: inline;
+    text-indent: .15em;
+    &:before {
+      font-family: "FontAwesome";
+      content: "\f0e5";
+      padding-right: 0.3em;
+    }
+    &:hover {
+      color: #444;
+    }
+  }
+  .disqus-comment-count {
+    padding: 0;
+    margin: 15px 0 0;
+    color: #6E7173;
+    float: right;
+    display: inline;
+    text-indent: .15em;
+    &:before {
+      font-family: "FontAwesome";
+      content: "\f0e5";
+      padding-right: 0.3em;
+    }
+    &:hover {
+      color: #444;
+    }
+  }
+  .post-content {
+    clear: left;
+    font-size: 15px;
+    line-height: 1.77;
+    color: #444;
+    padding-top: 15px;
+    text-align: justify;
+    text-justify: distribute;
+    word-break: break-all;
+    h2 {
+      margin: 1.4em 0 1.1em;
+      border-bottom: 1px solid #eee;
+      overflow: hidden;
+    }
+    h3 {
+      margin: 1.4em 0 1.1em;
+    }
+    pre {
+      padding 0.35em 1.5em
+      code {
+        padding: 0 2em;
+      }
+    }
+    // table
+    .table-area {
+      overflow: auto;
+    }
+    table{
+      width:100%;
+      max-width: 65em;
+      border: 1px solid #dedede;
+      margin: 15px auto;
+      border-collapse:collapse;
+      empty-cells:show;
+      tr,td{
+        height:35px;
+      }
+      th {
+        font-weight: bold;
+        text-align: center;
+        background: rgba(158, 188, 226, .2);
+        white-space: nowrap;
+      }
+      tbody{
+        tr:hover{
+          background: #efefef;
+        }
+      }
+      td,th{
+        //border: 1px solid #dedede;
+        //padding: 0 10px;
+      }
+      tr:nth-child(2n) {
+        background: rgba(158, 188, 226, .12);
+      }
+      td:nth-child(1){
+        white-space: nowrap;
+      }
+      td.gutter{
+        border-right 1px solid #dedede;
+        padding-right 10px;
+        .pre {
+        }
+      }
+      td.code{
+        padding: 0 10px;
+        .line {
+        }
+      }
+    }
+    @import "customise/list"
+    @import "customise/heading"
+    figure{
+      table {
+        border: none;
+        width: auto;
+        margin: 0;
+        tbody{
+          tr:hover{
+            background: none;
+          }
+        }
+      }
+    }
+  }
+  p {
+    //margin: 0 0 0;
+    code {
+      display: inline-block;
+      margin: 0 5px;
+      padding: 0 5px;
+      font-family: UrlFont;
+      background: #f7f8f8;
+    }
+    a {
+      color: #01579f;
+      padding-bottom: 2px;
+      word-break: break-all;
+      &:hover {
+        text-decoration: underline;
+      }
+      font-family: Menlo, Consolas, monospace;
+    }
+    .caption {
+      color: #444;
+      display: block;
+      font-size: 0.9em;
+      margin-top: 0.1em;
+      position: relative;
+      text-align: center;
+    }
+  }
+  hr {
+    margin: 2.4em auto;
+    border: none;
+    border-top: 1px solid #eee;
+    position: relative;
+  }
+  img {
+    max-width: 100%;
+    padding: 0.5em 0;
+    margin: auto;
+    display: block;
+  }
+  ul, ol {
+    border-radius: 3px;
+    margin: 1em 0;
+    ul {
+      margin: 0;
+    }
+    code {
+      display: inline-block;
+      margin: 0 5px;
+      padding: 0px 5px;
+      background: #f7f8f8;
+    }
+    a {
+      color: #01579f;
+      padding-bottom: 2px;
+      word-break: break-all;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// set the pre and highlight padding
+.post-content pre, .post-content .highlight {
+  margin: auto;
+  padding: 0.35em 1.5em;
+  border-style: solid;
+  border-color: #ddd;
+  border-width: 1px;
+  overflow: auto;
+  color: #657b83;
+  line-height: 1.3rem;
+}

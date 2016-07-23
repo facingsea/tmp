@@ -1,0 +1,118 @@
+@import "nib"
+@import "_variables"
+@import "_util/mixin"
+@import "_util/grid"
+
+global-reset()
+
+
+// custom url font.
+@font-face {
+  font-family: 'UrlFont';
+  font-style: normal;
+  src: local('Menlo'), local('Consolas'), local('monospace');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+.tagcloud a {
+  font-family: UrlFont;
+}
+
+#sidebar .widget ul li {
+  font-family: UrlFont;
+}
+
+.post .post-meta {
+  font-family: UrlFont;
+}
+.post .post-content {
+  //font-family: UrlFont;
+}
+
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+  /* Set your content font stack here: */
+  font-family: "PingFangSC-Regular", Helvetica, "Helvetica Neue", "Segoe UI",
+          "Hiragino Sans GB", "Source Han Sans CN", "STHeiti", "WenQuanYi Micro Hei", sans-serif;
+}
+
+body {
+  background-color: #FFF;
+  color: #444;
+  font-family: "TIBch", "Classic Grotesque W01", "Helvetica Neue", Arial, "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+}
+.body_container {
+  padding: 0 60px;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+.content_container {
+  padding-right: 50px;
+  padding-top: 20px;
+}
+a, button.submit {
+  color: #6E7173;
+  text-decoration: none;
+  -webkit-transition: all .1s ease-in;
+  -moz-transition: all .1s ease-in;
+  -o-transition: all .1s ease-in;
+  transition: all .1s ease-in;
+}
+a:hover, a:active {
+  color: #444;
+}
+a:focus {
+  outline:auto;
+}
+.clear {
+  clear: both;
+}
+div {
+  box-sizing: border-box;
+}
+
+@import "_partial/header"
+@import "_partial/sidebar"
+@import "_partial/post"
+@import "_partial/search"
+@import "_partial/tag"
+@import "_partial/page-nav"
+@import "_partial/footer"
+@import "_partial/post-archive"
+@import "_partial/main"
+@import "_partial/totop"
+@import "_partial/share"
+@import "_partial/toc"
+@import "_partial/timeline"
+@import "_partial/duoshuo"
+@import "_partial/highlight"
+@import "_partial/post-nav"
+@import "_partial/scroll"
+
+//@import "_extend"
+//@import "_partial/main"
+//@import "_partial/archive"
+//@import "_partial/article"
+//@import "_partial/archive"
+//@import "_partial/highlight"
+//@import "_partial/footer"
+//
+//if share
+//  @import "_partial/share"
+//
+//@import "_partial/page"
+//@import "_partial/instagram"
+//@import "_partial/tagcloud"
+//@import "_partial/scroll"
+//@import "_partial/mobile-slider"
+//
+//if search
+//  @import "_partial/search"
+//
+//@import "_partial/customise/color-scheme"
+//
+//if sidebar
+//  @import "_partial/sidebar"

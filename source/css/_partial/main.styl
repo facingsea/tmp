@@ -1,0 +1,125 @@
+/* middle*/
+@media print, screen and (max-width: 48em) {
+  .body_container {
+    padding: 0 30px;
+  }
+  .content_container {
+    padding-right: 15px;
+  }
+  .hidden_mid_and_down {
+    display: none !important;
+  }
+  #sidebar {
+    border-left-width: 0px;
+  }
+  #header {
+    .site-name {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    #nav-menu {
+      position: relative;
+      text-align: center;
+      a {
+        padding: 0 15px;
+        line-height: 27px;
+        height: 27px;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+/* small*/
+@media print, screen and (max-width: 35.5em) {
+  .body_container {
+    padding: 0 20px ;
+  }
+  .content_container {
+    padding-right: 0;
+  }
+}
+
+
+blockquote {
+  padding: 0.4em 20px ;
+  margin: .5em auto;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, .1);
+  border-left: 5px solid rgba(0, 153, 100, .62);
+  background: rgba(102, 128, 153, 0.08);
+  p {
+    margin: .4em auto;
+  }
+  blockquote {
+    border-left: none;
+  }
+  footer {
+    font-style: italic;
+    cite::before {
+    content: "—";
+    padding: 0 .3em
+  }
+  }
+
+}
+strong,b,em {
+  font-weight: bold;
+}
+pre {
+  margin:2em 0;
+}
+.hidden1 {
+  display: none;
+}
+
+/* table*/
+table {
+  margin: auto auto 15px;
+  width: 100%;
+  background: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left;
+  th {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-bottom: 2px solid #909ba2;
+  }
+  td {
+    padding: 5px 10px;
+  }
+  tr {
+    &:nth-child(2n) {
+      background: #f7f8f8;
+    }
+  }
+}
+
+
+/* title for search result or tagged posts*/
+.label-title {
+  margin-top: 1.1em;
+  font-size: 20px;
+  font-weight: normal;
+  color: #888;
+}
+
+/* read more*/
+.readmore a {
+  font-size: 14px;
+  color: #444;
+  margin: -10px 0;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  float: right;
+  &:after {
+    font-family: "FontAwesome";
+    content: "\f101";
+    padding-left: 0.3em;
+  }
+  &:hover {
+    background: #F8F8F8;
+    border-bottom-color: #D26911;
+  }
+}

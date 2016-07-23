@@ -1,0 +1,38 @@
+/* post navigator*/
+/* 上一篇，下一篇 */
+.post-nav {
+  overflow: hidden;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding: 10px;
+  white-space: nowrap;
+  border-top: 1px solid #eee;
+  a {
+    display: inline-block;
+    line-height: 25px;
+    font-size: 15px;
+    color: #555;
+    border-bottom: none;
+    float: left;
+    &.pre {
+      float: left;
+      &:before {
+        font-family: "FontAwesome";
+        content: "\f0d9";
+        padding-right: 0.3em;
+      }
+    }
+    &.next {
+      float: right;
+      &:after {
+        font-family: "FontAwesome";
+        content: "\f0da";
+        padding-left: 0.3em;
+      }
+    }
+    &:hover {
+      border-bottom: none;
+      color: #222;
+    }
+  }
+}
